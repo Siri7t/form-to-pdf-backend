@@ -4,6 +4,11 @@ import send_email
 
 app = Flask(__name__)
 
+# Add this route to handle root URL
+@app.route('/')
+def home():
+    return "Form to PDF Backend is Running!"
+
 @app.route('/generate-pdf')
 def generate_pdf():
     sheet_id = request.args.get('sheetId')
