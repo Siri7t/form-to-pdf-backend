@@ -3,8 +3,8 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.application import MIMEApplication
 from email.mime.text import MIMEText
 
-EMAIL_ADDRESS = 'your-email@gmail.com'
-EMAIL_PASSWORD = 'your-app-password'
+EMAIL_ADDRESS = 'mds66027@gmail.com'
+EMAIL_PASSWORD = 'mjwl nonh fevy bxih'
 
 def send_email_with_pdf(to_email, pdf_path):
     msg = MIMEMultipart()
