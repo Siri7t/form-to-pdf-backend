@@ -1,7 +1,6 @@
 from flask import Flask, request, send_file
 import pdf_generator
 import send_email
-import os
 
 app = Flask(__name__)
 
@@ -13,7 +12,7 @@ def generate_pdf():
     send_email.send_email_with_pdf(email, pdf_path)
     return "PDF generated and sent via email."
 
-if __name__ == '__main__':
-
-port = int(os.environ.get("PORT", 10000))
-app.run(host='0.0.0.0', port=port)
+if __name__ == "__main__":
+    import os
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host='0.0.0.0', port=port)
